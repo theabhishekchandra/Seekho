@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/animeListPage">
+
+    <fragment
+        android:id="@+id/animeListPage"
+        android:name="com.abhishek.seekho.AnimeListPage"
+        android:label="Anime List">
+        <action
+            android:id="@+id/action_animeListPage_to_animeDetailsPage"
+            app:destination="@id/animeDetailsPage" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/animeDetailsPage"
+        android:name="com.abhishek.seekho.AnimeDetailsPage"
+        android:label="Anime Details">
+    </fragment>
+
+</navigation>
